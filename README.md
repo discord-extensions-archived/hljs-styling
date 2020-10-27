@@ -16,4 +16,11 @@ git pull
 The default style is Atom One Dark. 
 
 # Previews
-coming soon tm or something like that
+### JavaScript
+![Preview](./Previews/JavaScriptDefault.png)
+
+### HTML
+![Preview](./Previews/HTMLDefault.png)
+
+### CSS
+![Preview](./Previews/CSSDefault.png)
