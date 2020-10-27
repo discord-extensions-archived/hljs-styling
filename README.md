@@ -1,5 +1,5 @@
 # HLJS Styling
-Change the default HLJS style on Discord. 
+Change the default HLJS style on Discord.
 
 # Installation and Updating
 For installation, go to **Themes -> Open CMD / Powershell / Terminal / Gitbash**, and enter the following:
@@ -13,4 +13,7 @@ git pull
 ```
 
 # Styles
- soon:tm: thing ig lol
+The default style is Atom One Dark. 
+
+# Previews
+coming soon tm or something like that
