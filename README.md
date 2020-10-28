@@ -13,7 +13,7 @@ git pull
 ```
 
 # Styles
-The default style that this theme comes with is Atom One Dark. If you'd like to change from this theme, go into the **HLJS-Styling** file and replace the variables, as simple as that. If you'd like to create a custom style and have it added, make a pull request adding the theme into the styles folder.
+The default style that this theme comes with is Atom One Dark. If you'd like to change from this theme, go into the **HLJS-Styling** file and replace the variables, as simple as that. If you'd like to create a custom style and have it added, make a pull request adding the style into the "styles" folder.
 
 # Previews
 ### JavaScript
