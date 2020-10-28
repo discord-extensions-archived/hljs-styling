@@ -1,5 +1,5 @@
 # HLJS Styling
-Change Discord's default HLJS colors.
+Change Discord's default HLJS colors. Based on styling from https://highlightjs.org/static/demo/
 
 # Installation and Updating
 For installation, go to **Themes -> Open CMD / Powershell / Terminal / Gitbash**, and enter the following:
