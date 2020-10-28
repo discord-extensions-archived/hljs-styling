@@ -208,10 +208,11 @@ $hljs-bullet: #61aeee;
 }
 
 
-/* Powercord Codeblocks */
+/* Powercord & Discord Codeblocks */
 .hljs {
     background-color: $hljs-background !important;
     color: $hljs-text;
+    @include hljs;
 
     & > .powercord-codeblock-table > tr > td {
         @include hljs 
@@ -219,7 +220,7 @@ $hljs-bullet: #61aeee;
 }
 
 
-/* Discord Codeblocks */
+/* Chatbar Codeblocks */
 .codeLine-14BKbG > span > span {
     color: $hljs-text;
     @include hljs
