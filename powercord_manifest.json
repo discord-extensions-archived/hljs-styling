@@ -1,6 +1,6 @@
 {
     "name": "HLJS Styling",
-    "description": "Change Discord's default HLJS styling.",
+    "description": "Change Discord's default codeblock style.",
     "version": "1.0.0",
     "author": "LuckFire#4800",
     "theme": "index.scss",
