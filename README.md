@@ -1,7 +1,7 @@
 # HLJS Styling
 Change Discord's default codeblock style. Based on styling from https://highlightjs.org/static/demo/
 
-## Note that because Discord doesn't use the proper element in some areas, it wont be themed *exactly* the same as the original theme.
+### Note that because Discord doesn't use the proper element in some areas, it wont be themed *exactly* the same as the original theme.
 
 # Installation and Updating
 For installation, go to **Themes -> Open CMD / Powershell / Terminal / Gitbash**, and enter the following:
