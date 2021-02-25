@@ -1,3 +1,8 @@
+# v0.1.1d
+Literally redid everything from the start *again*.. and hopefully a bit better this time. Generally, everything is the same but redoing everything gave me a refresher on what the hell I even did to begin with.
+
+Also, I have verified that 100 of the 187 languages work as they should, will do last 87 later whenever I feel like it. Getting closer to a v1.0.0 release as well.
+
 # v0.1.0d
 For those who actually use this, you may be wondering why this isn't v1.0.0 anyomre and what's going on.. I've taken it upon myself to redo this thing in it's entirety and do it **properly**. What I mean by "properly" is that everything should appear as how it does on https://highlightjs.org/static/demo/, tho given that Discord has messed up in some areas with the classes. 
 

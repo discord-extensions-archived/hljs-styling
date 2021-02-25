@@ -1,0 +1,134 @@
+#app-mount {
+    code {
+        background: var(--hljs-background);
+        color: var(--hljs-default);
+    }
+
+    code, .slateTextArea-1Mkdgw {
+        //hljs
+        .hljs-comment {
+            color: var(--hljs-comment);
+            font-style: italic;
+        }
+        .hljs-quote {
+            color: var(--hljs-quote);
+            font-style: italic;
+        }
+        .hljs-name {
+            color: var(--hljs-name);
+        }
+        .hljs-title {
+            color: var(--hljs-title);
+        }
+        .hljs-string {
+            color: var(--hljs-string);
+        }
+        .hljs-meta-string {
+            color: var(--hljs-meta-string);
+        }
+        .hljs-link {
+            color: var(--hljs-link);
+        }
+        .hljs-bullet {
+            color: var(--hljs-bullet);
+        }
+        .hljs-number {
+            color: var(--hljs-number);
+        }
+        .hljs-variable {
+            color: var(--hljs-variable);
+        }
+        .hljs-template-variable:not(.hljs-string):not(.hljs-name) {
+            color: var(--hljs-template-variable);
+        }
+        .hljs-addition {
+            color: var(--hljs-addition);
+        }
+        .hljs-deletion {
+            color: var(--hljs-deletion);
+        }
+        .hljs-meta:not(.hljs-meta-string) {
+            color: var(--hljs-meta);
+        }
+        .hljs-keyword {
+            color: var(--hljs-keyword);
+        }
+        .hljs-literal {
+            color: var(--hljs-literal);
+        }
+        .hljs-type {
+            color: var(--hljs-type);
+        }
+        .hljs-built_in {
+            color: var(--hljs-built_in);
+        }
+        .hljs-symbol {
+            color: var(--hljs-symbol);
+        }
+        .hljs-attribute {
+            color: var(--hljs-attribute);
+        }
+        .hljs-attr {
+            color: var(--hljs-attr);
+        }
+        .hljs-section {
+            color: var(--hljs-section);
+        }
+        .hljs-selector-tag {
+            color: var(--hljs-selector-tag);
+        }
+        .hljs-subst:not(.hljs-keyword):not(.hljs-string) {
+            color: var(--hljs-subst);
+        }
+        .hljs-builtin-name {
+            color: var(--hljs-builtin-name);
+        }
+        .hljs-selector-class {
+            color: var(--hljs-selector-class);
+        }
+        .hljs-selector-attr:not(.hljs-string) {
+            color: var(--hljs-selector-attr);
+        }
+        .hljs-selector-pseudo {
+            color: var(--hljs-selector-pseudo);
+        }
+        .hljs-doctag {
+            color: var(--hljs-doctag);
+        }
+        .hljs-regexp {
+            color: var(--hljs-regexp);
+        }
+        .hljs-selector-id {
+            color: var(--hljs-selector-id);
+        }
+
+        //function
+        .hljs-function .hljs-title, 
+        .hljs-function.hljs-title {
+            color: var(--hljs-function-title);
+        }
+
+        //class
+        .hljs-class .hljs-title,
+        .hljs-class.hljs-title {
+            color: var(--hljs-class-title);
+        }
+
+        //built_in -- a fix for when editing messages
+        [class="hljs-built_in hljs-keyword"],
+        [class="hljs-built_in hljs-keyword hljs-built_in hljs-keyword"] {
+            color: var(--hljs-keyword);
+        }
+
+        //tag
+        .hljs-tag .hljs-name,
+        .hljs-tag.hljs-name {
+            color: var(--hljs-tag-name);
+        }
+
+        //string -- a fix for when editing messages
+        [class="hljs-string hljs-subst"] {
+            color: var(--hljs-subst);
+        }
+    }
+}
