@@ -1,3 +1,6 @@
+# v0.1.2d 
+Slight codeblock styling change, expect it to change a bit more over time.
+
 # v0.1.1d
 Literally redid everything from the start *again*.. and hopefully a bit better this time. Generally, everything is the same but redoing everything gave me a refresher on what the hell I even did to begin with.
 

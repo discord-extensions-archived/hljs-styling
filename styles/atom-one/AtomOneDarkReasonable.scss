@@ -2,14 +2,15 @@
     // Base Colors
     --hljs-color-0: #282C34;
     --hljs-color-1: #abb2bf;
-    --hljs-color-2: #5c6370;
+    --hljs-color-2: #b18eb1;
     --hljs-color-3: #98c379;
     --hljs-color-4: #e06c75;
-    --hljs-color-5: #c678dd;
+    --hljs-color-5: #f92672;
     --hljs-color-6: #d19a66;
     --hljs-color-7: #e6c07b;
     --hljs-color-8: #61aeee;
     --hljs-color-9: #56b6c2;
+    --hljs-color-10: #a6e22e;
 
     // HLJS
     --hljs-background: var(--background-secondary);
@@ -52,9 +53,9 @@
     --hljs-class-title: var(--hljs-color-7);
 
     // HLJS-Function
-    --hljs-function: var(--hljs-color-1);
+    --hljs-function: var(--hljs-color-8);
     --hljs-function-title: var(--hljs-color-8);
-    --hljs-function-params: var(--hljs-color-1);
+    --hljs-function-params: var(--hljs-color-10);
 
     // HLJS-Tag
     --hljs-tag-name: var(--hljs-color-4);    

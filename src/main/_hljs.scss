@@ -8,7 +8,7 @@
     }
 
     code, .slateTextArea-1Mkdgw {
-        //hljs
+        // HLJS Global
         .hljs-comment {
             color: var(--hljs-comment);
             font-style: italic;
@@ -104,32 +104,46 @@
         .hljs-selector-id {
             color: var(--hljs-selector-id);
         }
-
-        //function
-        .hljs-function .hljs-title, 
-        .hljs-function.hljs-title {
-            color: var(--hljs-function-title);
+        .hljs-params {
+            color: var(--hljs-params);
         }
 
-        //class
-        .hljs-class .hljs-title,
-        .hljs-class.hljs-title {
-            color: var(--hljs-class-title);
+        // HLJS Function
+        .hljs-function {
+            color: var(--hljs-function);
+
+            &.hljs-title, .hljs-title {
+                color: var(--hljs-function-title);
+            }
+
+            &.hljs-params, .hljs-params {
+                color: var(--hljs-function-params);
+            }
         }
 
-        //built_in -- a fix for when editing messages
+        // HLJS Class
+        .hljs-class {
+            color: var(--hljs-class);
+
+            &.hljs-title, .hljs-title {
+                color: var(--hljs-class-title);
+            }
+        }
+
+        // HLJS Tag
+        .hljs-tag {
+            &.hljs-name, .hljs-name {
+                color: var(--hljs-tag-name);
+            }
+        }
+
+        // Message editing scuffed fixes
+        ////built_in
         [class="hljs-built_in hljs-keyword"],
         [class="hljs-built_in hljs-keyword hljs-built_in hljs-keyword"] {
             color: var(--hljs-keyword);
         }
-
-        //tag
-        .hljs-tag .hljs-name,
-        .hljs-tag.hljs-name {
-            color: var(--hljs-tag-name);
-        }
-
-        //string -- a fix for when editing messages
+        ////string
         [class="hljs-string hljs-subst"] {
             color: var(--hljs-subst);
         }
