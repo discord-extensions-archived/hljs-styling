@@ -1,5 +1,5 @@
 #app-mount {
-    code:not(.inline) {
+    .hljs {
         background: var(--hljs-background);
         color: var(--hljs-default);
         padding: 15px 30px;
@@ -7,7 +7,7 @@
         border: none;
     }
 
-    code, .slateTextArea-1Mkdgw {
+    .hljs, .slateTextArea-1Mkdgw {
         // HLJS Global
         .hljs-comment {
             color: var(--hljs-comment);
