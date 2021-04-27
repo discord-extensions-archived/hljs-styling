@@ -1,7 +1,7 @@
 {
     "name": "HLJS Styling",
-    "description": "Adds customization to Discord's codeblocks.",
-    "version": "0.1.2d",
+    "description": "Gives customization to Discord's default codeblocks.",
+    "version": "1.0.0",
     "author": "LuckFire#4800",
     "theme": "index.scss",
     "consent": "false",

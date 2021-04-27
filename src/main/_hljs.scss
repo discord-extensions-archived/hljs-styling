@@ -1,151 +1,97 @@
 #app-mount {
     .hljs {
-        background: var(--hljs-background);
-        color: var(--hljs-default);
-        padding: 15px 30px;
+        background: var(--background);
+        color: var(--text-default);
+        padding: 15px 20px;
         border-radius: 0;
         border: none;
     }
+    .codeLine-14BKbG {
+        color: var(--text-default);
+    }
+    
+    // defaults
+    $hljs: (
+        'comment', 'attribute', 'nomarkup', 'variable', 'meta', 'meta-string', 'meta-keyword', 'literal', 'string', 'section',
+        'number', 'tag', 'name', 'selector-tag', 'selector-class', 'selector-attr', 'selector-pseudo', 'function', 'keyword', 
+        'built_in', 'title', 'link', 'bullet', 'symbol', 'addition', 'deletion', 'attr', 'punctuation', 'regexp', 'type',
+        'selector-id', 'params', 'operator', 'rest_arg', 'template-variable'
+    );
+    @each $hljsType in $hljs {
+        .hljs-#{$hljsType} {
+            color: var(--hljs-#{$hljsType});
+        }
+    }
 
-    .hljs, .slateTextArea-1Mkdgw {
-        // HLJS Global
-        .hljs-comment {
-            color: var(--hljs-comment);
-            font-style: italic;
-        }
-        .hljs-quote {
-            color: var(--hljs-quote);
-            font-style: italic;
-        }
-        .hljs-name {
-            color: var(--hljs-name);
-        }
-        .hljs-title {
-            color: var(--hljs-title);
-        }
-        .hljs-string {
-            color: var(--hljs-string);
-        }
-        .hljs-meta-string {
-            color: var(--hljs-meta-string);
-        }
-        .hljs-link {
-            color: var(--hljs-link);
-        }
-        .hljs-bullet {
-            color: var(--hljs-bullet);
-        }
-        .hljs-number {
-            color: var(--hljs-number);
-        }
-        .hljs-variable {
-            color: var(--hljs-variable);
-        }
-        .hljs-template-variable:not(.hljs-string):not(.hljs-name) {
-            color: var(--hljs-template-variable);
-        }
-        .hljs-addition {
-            color: var(--hljs-addition);
-        }
-        .hljs-deletion {
-            color: var(--hljs-deletion);
-        }
-        .hljs-meta:not(.hljs-meta-string) {
-            color: var(--hljs-meta);
-        }
-        .hljs-keyword {
-            color: var(--hljs-keyword);
-        }
-        .hljs-literal {
-            color: var(--hljs-literal);
-        }
-        .hljs-type {
-            color: var(--hljs-type);
-        }
-        .hljs-built_in {
-            color: var(--hljs-built_in);
-        }
-        .hljs-symbol {
-            color: var(--hljs-symbol);
-        }
-        .hljs-attribute {
-            color: var(--hljs-attribute);
-        }
-        .hljs-attr {
-            color: var(--hljs-attr);
-        }
-        .hljs-section {
-            color: var(--hljs-section);
-        }
-        .hljs-selector-tag {
-            color: var(--hljs-selector-tag);
-        }
-        .hljs-subst:not(.hljs-keyword):not(.hljs-string) {
-            color: var(--hljs-subst);
-        }
-        .hljs-builtin-name {
-            color: var(--hljs-builtin-name);
-        }
-        .hljs-selector-class {
-            color: var(--hljs-selector-class);
-        }
-        .hljs-selector-attr:not(.hljs-string) {
-            color: var(--hljs-selector-attr);
-        }
-        .hljs-selector-pseudo {
-            color: var(--hljs-selector-pseudo);
-        }
-        .hljs-doctag {
-            color: var(--hljs-doctag);
-        }
-        .hljs-regexp {
-            color: var(--hljs-regexp);
-        }
-        .hljs-selector-id {
-            color: var(--hljs-selector-id);
-        }
-        .hljs-params {
-            color: var(--hljs-params);
-        }
-
-        // HLJS Function
-        .hljs-function {
-            color: var(--hljs-function);
-
-            &.hljs-title, .hljs-title {
-                color: var(--hljs-function-title);
-            }
-
-            &.hljs-params, .hljs-params {
-                color: var(--hljs-function-params);
+    // comment
+    .hljs-comment {
+        $comments: (
+            'doctag'
+        );
+        @each $hljsType in $comments {
+            .hljs-#{$hljsType} {
+                color: var(--hljs-comment-#{$hljsType});
             }
         }
+    }
 
-        // HLJS Class
-        .hljs-class {
-            color: var(--hljs-class);
-
-            &.hljs-title, .hljs-title {
-                color: var(--hljs-class-title);
+    // params
+    .hljs-params {
+        $params: (
+            'attr'
+        );
+        @each $hljsType in $params {
+            .hljs-#{$hljsType} {
+                color: var(--hljs-params-#{$hljsType});
             }
         }
+    }
 
-        // HLJS Tag
-        .hljs-tag {
-            &.hljs-name, .hljs-name {
-                color: var(--hljs-tag-name);
+    // string
+    .hljs-string {
+        $strings: (
+            'subst', 'template-variable'
+        );
+        @each $hljsType in $strings {
+            .hljs-#{$hljsType} {
+                color: var(--hljs-string-#{$hljsType});
             }
         }
+    }
 
-        // Message editing scuffed fixes
-        ////built_in
-        [class="hljs-built_in hljs-keyword"],
-        [class="hljs-built_in hljs-keyword hljs-built_in hljs-keyword"] {
-            color: var(--hljs-keyword);
+    // tag
+    .hljs-tag {
+        $tags: (
+            'name', 'attr'
+        );
+        @each $hljsType in $tags {
+            .hljs-#{$hljsType} {
+                color: var(--hljs-tag-#{$hljsType});
+            }
         }
-        ////string
-        [class="hljs-string hljs-subst"] {
-            color: var(--hljs-subst);
+    }
+
+    // function
+    .hljs-function {
+        $functions: (
+            'keyword', 'title', 'literal', 'params', 'operator'
+        );
+        @each $hljsType in $functions {
+            .hljs-#{$hljsType} {
+                color: var(--hljs-function-#{$hljsType});
+            }
+        }
+    }
+
+    // class
+    .hljs-class {
+        $classes: (
+            'keyword', 'title'
+        );
+        @each $hljsType in $classes {
+            .hljs-#{$hljsType} {
+                color: var(--hljs-class-#{$hljsType});
+            }
         }
     }
 }
