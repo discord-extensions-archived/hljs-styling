@@ -13,12 +13,12 @@ git clone https://github.com/Discord-Theme-Addons/hljs-styling
 ```
 
 **For [BetterDiscord](https://betterdiscord.net/):**
-- [Direct Dowload](https://betterdiscord.net/ghdl?id=)
-- [View Source]()
+- [Direct Dowload](https://betterdiscord.net/ghdl?id=3681)
+- [View Source](https://raw.githubusercontent.com/Discord-Theme-Addons/hljs-styling/main/src/support/HLJSStyling.theme.css)
 
 **For Browser / Web:**
 1. Install the Stylus extension for [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) / [Opera](https://github.com/openstyles/stylus/wiki/Opera,-Outdated-Stylus).
-2. After installing, head over to [this link]().
+2. After installing, head over to [this link](https://raw.githubusercontent.com/Discord-Theme-Addons/hljs-styling/main/src/support/HLJSStyling.user.css).
 3. Press the "Install Style" button.
 
 ## Style Changing
